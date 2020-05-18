@@ -22,7 +22,6 @@ namespace Prueba1
 
         if (usuario != "admin" || contraseña != "abc123")
          {
-             Console.Clear();
              Console.WriteLine("Error!, Ingrese los datos correctos");
          }
          } while (usuario != "admin" || contraseña != "abc123");
@@ -30,14 +29,11 @@ namespace Prueba1
             int Menu = 0;
             do
             {
-                Console.Clear();
                 Console.WriteLine("Bienvenido!, ¿Que desea? " + "1-Agregar vehiculo " + "2-Ver datos de un vehiculo " + "0-Salir");
                 int menu = int.Parse(Console.ReadLine());
-
                 switch (menu)
                 {
                     case 1:
-                        Console.Clear();
                         Console.WriteLine("Ingresar datos de un vehiculo: ");
                         Console.WriteLine("Marca: ");
                         string marca = Console.ReadLine();
@@ -117,8 +113,6 @@ namespace Prueba1
                         string tipoMezclador = tipmezcla;
                         Console.WriteLine("Su Capacidad es: ");
                         int capacidad = int.Parse(Console.ReadLine());
-               
-                        Console.ReadKey();
                         break;
                     case 2:
                         string infoAutomovil = string.Format(
@@ -134,10 +128,7 @@ namespace Prueba1
                         Console.WriteLine(infoAutomovil);
                         break;
                 }
-           
-
                 } while(Menu != 0);
-
             } 
         }
     }
