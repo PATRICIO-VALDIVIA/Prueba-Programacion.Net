@@ -20,12 +20,9 @@ namespace Prueba1
           Console.WriteLine("Ingrese contraseña: ");
           contraseña = Console.ReadLine();
 
-        if (usuario != "admin" || contraseña != "abc123")
-         {
-             Console.WriteLine("Error!, Ingrese los datos correctos");
-         }
+        if (usuario == "admin" && contraseña == "abc123")
+         { }
          } while (usuario != "admin" || contraseña != "abc123");
-
             int Menu = 0;
             do
             {
