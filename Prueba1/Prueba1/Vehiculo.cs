@@ -24,7 +24,6 @@ namespace Prueba1
                 Ruedas[i] = new Rueda(tipoRecubrimiento, minDurometro, maxDurometro);
             }
 
-            _estanque = new Estanque(capacidad);
 
             _mezclador = new Mezclador(tipoMezclador);
 
