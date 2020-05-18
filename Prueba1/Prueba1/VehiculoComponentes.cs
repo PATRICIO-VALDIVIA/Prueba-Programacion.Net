@@ -6,17 +6,18 @@ namespace Prueba1
 {
     abstract class VehiculoComponentes
     {
-        private double _estado;
+        private double _estadocomp;
 
         protected VehiculoComponentes()
         {
-            _estado = 100;
+            _estadocomp = 0.0;
+            _estadocomp = 100.0;
         }
 
-        public double Estado
+        public double EstadoComponente
         {
-            get => _estado;
-            set => double.TryParse(value.ToString(), out _estado);
+            get => _estadocomp;
+            set => double.TryParse(value.ToString(), out _estadocomp);
         }
 
     }
